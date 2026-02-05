@@ -26,9 +26,6 @@ RUN curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | b
 # Install linode-cli
 RUN pip3 install linode-cli
 
-# Install Docker CLI (client only, not daemon)
-RUN curl -fsSL https://get.docker.com/rootless | sh
-
 # Set up linode-cli config directory
 ENV LINODE_CLI_TOKEN="" \
     PATH="/root/.local/bin:$PATH"
