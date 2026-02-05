@@ -26,9 +26,5 @@ RUN curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | b
 # Install linode-cli
 RUN pip3 install linode-cli
 
-# Set up linode-cli config directory
-ENV LINODE_CLI_TOKEN="" \
-    PATH="/root/.local/bin:$PATH"
-
 # Default command
 CMD ["/bin/bash"]
