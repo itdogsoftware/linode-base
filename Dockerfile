@@ -4,6 +4,7 @@ LABEL authors="Roy To <roy.to>"
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
+    jq \
     curl \
     wget \
     python3 \
